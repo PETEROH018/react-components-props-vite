@@ -1,4 +1,4 @@
-export default function About({image = "https://placeholder.com", about}){
+export default function About({image = "https://via.placeholder.com/215", about}){
 
     return (
         <aside>
