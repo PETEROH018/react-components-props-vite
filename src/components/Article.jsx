@@ -1,9 +1,9 @@
-export default function Article({post}){
+export default function Article({post : {title,date,minutes,preview}}){
     return (
         <article>
-            <h3>{post.title}</h3>
-            <small>{post.date}. {post.minutes} minutes read</small>
-            <p>{post.preview}</p>
+            <h3>{title}</h3>
+            <small>{date}. {minutes} minutes read</small>
+            <p>{preview}</p>
         </article>
     )
 }
