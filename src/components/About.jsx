@@ -1,9 +1,9 @@
-export default function About({blogData}){
+export default function About({image = "https://placeholder.com", about}){
 
     return (
         <aside>
-          <img src={blogData.image || "https://via.placeholder.com/215"} alt="blog logo" />
-          <p>{blogData.about}</p>
+          <img src={image} alt="blog logo" />
+          <p>{about}</p>
         </aside>
     )
 

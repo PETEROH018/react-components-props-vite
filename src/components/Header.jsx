@@ -1,6 +1,6 @@
-export default function Header({blogData}) {
+export default function Header({name}) {
 
     return (
-        <h1>{blogData.name}</h1>
+        <h1>{name}</h1>
     )
 }

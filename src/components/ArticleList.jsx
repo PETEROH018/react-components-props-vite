@@ -1,10 +1,10 @@
 import Article from "./Article"
 
-export default function ArticleList({blogData}){
+export default function ArticleList({posts}){
 
     return(
         <ul> 
-            {blogData.posts.map(post => (
+            {posts.map(post => (
                 <li key={post.id}><Article post = {post}/></li>
             ))}
         </ul>
