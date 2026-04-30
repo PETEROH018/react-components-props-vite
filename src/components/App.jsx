@@ -1,5 +1,5 @@
 import React from "react";
-import blogData from "../../vite-project/src/data/blog";
+import blogData from "../data/blog";
 import Header from "./Header"
 import ArticleList from "./ArticleList"
 import About from "./About"
