@@ -3,11 +3,11 @@ import Article from "./Article"
 export default function ArticleList({posts}){
 
     return(
-        <ul> 
+        <main>
             {posts.map(post => (
-                <li key={post.id}><Article post = {post}/></li>
+                <Article  key={post.id} post = {post}/>
             ))}
-        </ul>
+        </main>
     )
 
 }
