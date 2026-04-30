@@ -1,8 +1,8 @@
 export default function About({blogData}){
-    const placeholder = "https://via.placeholder.com/215"
+
     return (
         <aside>
-          <img src={blogData.image} alt="blog logo" onError={(e) => { e.target.src = placeholder; }} />
+          <img src={blogData.image || "https://via.placeholder.com/215"} alt="blog logo" />
           <p>{blogData.about}</p>
         </aside>
     )
